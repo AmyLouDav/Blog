@@ -1,7 +1,5 @@
 import React from "react";
 
-const BlogPage = () => {
-
-}
+const BlogPage = () => {};
 
 export default BlogPage;
