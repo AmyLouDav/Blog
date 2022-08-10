@@ -7,10 +7,11 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "CFPAT-eBVc0YhrBRontHnbuBNuIQY11vZvN2RDHgdGChDHVaU",
+        accessToken: "WqR0221hBj1Igq5VE7LDJPrAbYu_hZVq-tf_RCShH1k",
         spaceId: "jnyuf76defm3",
       },
     },
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-image",
   ],
 };
