@@ -2,9 +2,9 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import NavBar from "./navBar";
 
-const BlogPage = ({ data }) => {
+const InfoPage = ({ data }) => {
   const {
-    contentfulBlogPage: {
+    contentfulInfoPage: {
       name,
     },
   } = data;
@@ -17,11 +17,11 @@ const BlogPage = ({ data }) => {
   );
 };
 
-export default BlogPage;
+export default InfoPage;
 
 export const query = graphql`
   query ($path: String) {
-    contentfulBlogPage(slug: { eq: $path }) {
+    contentfulInfoPage(slug: { eq: $path }) {
       id
       slug
       name
