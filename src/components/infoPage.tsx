@@ -5,14 +5,18 @@ import NavBar from "./navBar";
 const InfoPage = ({ data }) => {
   const {
     contentfulInfoPage: {
-      name,
+      content: {
+        title,
+        description: { description },
+      },
     },
   } = data;
 
   return (
     <main>
       <NavBar />
-      <h1>{name}</h1>
+      <h1>{title}</h1>
+      <p>{description}</p>
     </main>
   );
 };
@@ -24,7 +28,13 @@ export const query = graphql`
     contentfulInfoPage(slug: { eq: $path }) {
       id
       slug
-      name
+      content {
+        slug
+        title
+        description {
+          description
+        }
+      }
     }
   }
 `;
