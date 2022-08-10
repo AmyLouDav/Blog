@@ -5,16 +5,14 @@ import NavBar from "./navBar";
 const BlogPage = ({ data }) => {
   const {
     contentfulBlogPage: {
-      title,
-      description: { description },
+      name,
     },
   } = data;
 
   return (
     <main>
       <NavBar />
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <h1>{name}</h1>
     </main>
   );
 };
@@ -26,10 +24,7 @@ export const query = graphql`
     contentfulBlogPage(slug: { eq: $path }) {
       id
       slug
-      title
-      description {
-        description
-      }
+      name
     }
   }
 `;
