@@ -3,20 +3,20 @@ import { graphql } from "gatsby";
 import NavBar from "./navBar";
 
 const BlogPage = ({ data }) => {
-  // const {
-  //   // contentfulBlogPage: {
-  //   //   content: {
-  //   //     title,
-  //   //     description: { description },
-  //   //   },
-  //   // },
-  // } = data;
-console.log("***", data)
+  const {
+    contentfulBlogPage: {
+      content: {
+        title,
+        description: { description },
+      },
+    },
+  } = data;
+//   console.log("***", data);
   return (
     <main>
       <NavBar />
-      <h1>hello</h1>
-      <p>description</p>
+      <h1>{title}</h1>
+      <p>{description}</p>
     </main>
   );
 };
