@@ -9,6 +9,12 @@ exports.createPages = async ({ graphql, actions }) => {
           slug
         }
       }
+
+      allContentfulBlogPage {
+        nodes {
+          slug
+        }
+      }
     }
   `);
 
@@ -19,6 +25,16 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: slug,
       component: path.resolve("./src/components/infoPage.tsx"),
+    });
+  });
+
+  const blogPages = result.data.allContentfulBlogPage.nodes;
+  
+  blogPages.forEach((blogPage) => {
+    const { slug } = blogPage;
+    createPage({
+      path: slug,
+      component: path.resolve(".src/components/blogPage.tsx"),
     });
   });
 };
