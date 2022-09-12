@@ -8,7 +8,7 @@ const NavBar = () => {
       <br />
       <Link to="/contact">Contact</Link>
       <br />
-      <Link to="/blog">Blog</Link>
+      <Link to="/blogPage">Blog</Link>
     </div>
   );
 };
