@@ -4,16 +4,32 @@ import NavBar from "../components/navBar";
 import BlogPage from "../components/blogPage";
 import { Link } from "gatsby";
 
-const ListPage = () => {
+const ListPage = ({ data }) => {
+  const {
+    contentfulBlogPage: {
+      content: { title },
+    },
+  } = data;
+
   return (
     <main>
       <NavBar />
       <h1>Blog Posts</h1>
-      <Link to="/article1">Blog Post 1</Link>
-      <br />
-      <Link to="/article2">Blog Post 2</Link>
+      <p>{title}</p>
+      
     </main>
   );
 };
 
 export default ListPage;
+
+export const query = graphql`
+  query {
+    contentfulBlogPage {
+      content {
+        title
+        slug
+      }
+    }
+  }
+`;
