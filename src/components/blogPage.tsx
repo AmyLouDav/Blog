@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
       },
     },
   } = data;
-//   console.log("***", data);
+
   return (
     <main>
       <NavBar />
