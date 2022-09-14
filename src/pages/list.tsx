@@ -6,8 +6,12 @@ import { Link } from "gatsby";
 
 const ListPage = ({ data }) => {
   const {
-    contentfulBlogPage: {
-      content: { title },
+    allContentfulBlogPage: {
+      nodes: [
+        {
+          content: { title },
+        },
+      ],
     },
   } = data;
 
@@ -16,7 +20,6 @@ const ListPage = ({ data }) => {
       <NavBar />
       <h1>Blog Posts</h1>
       <p>{title}</p>
-      
     </main>
   );
 };
@@ -24,11 +27,12 @@ const ListPage = ({ data }) => {
 export default ListPage;
 
 export const query = graphql`
-  query {
-    contentfulBlogPage {
-      content {
-        title
-        slug
+  query{
+    allContentfulBlogPage {
+      nodes {
+        content {
+          title
+        }
       }
     }
   }
