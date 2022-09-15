@@ -10,7 +10,7 @@ const ListPage = ({ data }) => {
     allContentfulBlogPage: {
       nodes: [
         {
-          content: { title },
+          content: { title, slug },
         },
       ],
     },
@@ -22,11 +22,13 @@ const ListPage = ({ data }) => {
     <main>
       <NavBar />
       <h1>Blog Posts</h1>
-      {nodes.map((item) => (
-        <p>{item.content.title}</p>
-        // need to pass the item.content.title as a prop to the LinkCard component
-        // <LinkCard />
-      ))}
+      <ul>
+        {nodes.map((item) => (
+          <li>
+            <LinkCard linkData={item.content} />
+          </li>
+        ))}
+      </ul>
     </main>
   );
 };
@@ -39,6 +41,7 @@ export const query = graphql`
       nodes {
         content {
           title
+          slug
         }
       }
     }
