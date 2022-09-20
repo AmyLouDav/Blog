@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import NavBar from "./navBar";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Img from "gatsby-image";
 
 const BlogPage = ({ data }) => {
   const {
@@ -9,12 +10,12 @@ const BlogPage = ({ data }) => {
       content: {
         title,
         description: { description },
-        images: { images },
+        image: { url },
       },
     },
   } = data;
 
-  const image = getImage(images);
+  const image = getImage(image);
 
   return (
     <main>
@@ -22,7 +23,7 @@ const BlogPage = ({ data }) => {
       <h1>{title}</h1>
       <p>{description}</p>
       <div>
-        <GatsbyImage image={image} alt="placeholder" />
+        <img src={url} alt="placeholder" />
       </div>
     </main>
   );
@@ -42,8 +43,8 @@ export const query = graphql`
           id
         }
         slug
-        images {
-          gatsbyImageData(width: 200)
+        image {
+          url
         }
       }
     }
