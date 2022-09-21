@@ -4,6 +4,7 @@ import NavBar from "../components/navBar";
 import BlogPage from "../components/blogPage";
 import { Link } from "gatsby";
 import LinkCard from "../components/linkCard";
+//import { Container } from "../components/styles/container.styled";
 
 const ListPage = ({ data }) => {
   const {

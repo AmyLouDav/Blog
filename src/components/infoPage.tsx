@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import NavBar from "./navBar";
+import { Container } from "./styles/container.styled";
 
 const InfoPage = ({ data }) => {
   const {
@@ -13,11 +14,11 @@ const InfoPage = ({ data }) => {
   } = data;
 
   return (
-    <main>
+    <Container>
       <NavBar />
       <h1>{title}</h1>
       <p>{description}</p>
-    </main>
+    </Container>
   );
 };
 
