@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import NavBar from "./navBar";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import Img from "gatsby-image";
-import { Container } from "./styles/container.styled";
+import NavBar from "../nav-bar/navBar";
+// import { GatsbyImage, getImage } from "gatsby-plugin-image";
+// import Img from "gatsby-image";
+import { Container } from "../styles/container.styled";
 
 const BlogPage = ({ data }) => {
   const {
@@ -22,10 +22,10 @@ const BlogPage = ({ data }) => {
     <Container>
       <NavBar />
       <h1>{title}</h1>
-      <p>{description}</p>
       <div>
         <img src={url} alt="placeholder" />
       </div>
+      <p>{description}</p>
     </Container>
   );
 };

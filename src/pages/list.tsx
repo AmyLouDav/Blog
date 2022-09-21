@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import NavBar from "../components/navBar";
-import BlogPage from "../components/blogPage";
+import NavBar from "../components/nav-bar/navBar";
+import BlogPage from "../components/blog-page/blogPage";
 import { Link } from "gatsby";
-import LinkCard from "../components/linkCard";
+import LinkCard from "../components/link-card/linkCard";
 //import { Container } from "../components/styles/container.styled";
 
 const ListPage = ({ data }) => {
@@ -11,7 +11,11 @@ const ListPage = ({ data }) => {
     allContentfulBlogPage: {
       nodes: [
         {
-          content: { title, slug },
+          content: {
+            title,
+            slug,
+            image: { url },
+          },
         },
       ],
     },
@@ -43,6 +47,9 @@ export const query = graphql`
         content {
           title
           slug
+          image {
+            url
+          }
         }
       }
     }

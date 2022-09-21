@@ -24,7 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const { slug } = infoPage;
     createPage({
       path: slug,
-      component: path.resolve("./src/components/infoPage.tsx"),
+      component: path.resolve("./src/components/info-page/infoPage.tsx"),
     });
   });
 
@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const { slug } = blogPage;
     createPage({
       path: slug,
-      component: path.resolve("./src/components/blogPage.tsx"),
+      component: path.resolve("./src/components/blog-page/blogPage.tsx"),
     });
   });
 };
