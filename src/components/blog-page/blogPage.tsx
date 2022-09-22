@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import NavBar from "../nav-bar/navBar";
-import { Container } from "../styles/container.styled";
+import { GlobalStyles } from "../styles/global-styles";
 import DOMPurify from "dompurify";
 
 const BlogPage = ({ data }) => {
@@ -18,7 +18,7 @@ const BlogPage = ({ data }) => {
   } = data;
 
   return (
-    <Container>
+    <GlobalStyles>
       <NavBar />
       <h1>{title}</h1>
       <div>
@@ -29,7 +29,7 @@ const BlogPage = ({ data }) => {
           __html: DOMPurify.sanitize(html),
         }}
       />
-    </Container>
+    </GlobalStyles>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import NavBar from "../components/nav-bar/navBar";
 import LinkCard from "../components/link-card/linkCard";
-import { Container } from "../components/styles/container.styled";
+import { GlobalStyles } from "../components/styles/global-styles";
 
 const ListPage = ({ data }) => {
   const {
@@ -22,7 +22,7 @@ const ListPage = ({ data }) => {
   const { nodes } = data.allContentfulBlogPage;
 
   return (
-    <Container>
+    <GlobalStyles>
       <NavBar />
       <h1>Blog Posts</h1>
       <ul>
@@ -32,7 +32,7 @@ const ListPage = ({ data }) => {
           </li>
         ))}
       </ul>
-    </Container>
+    </GlobalStyles>
   );
 };
 

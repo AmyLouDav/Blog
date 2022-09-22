@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import NavBar from "../nav-bar/navBar";
-import { Container } from "../styles/container.styled";
+import { GlobalStyles } from "../styles/global-styles";
 
 const InfoPage = ({ data }) => {
   const {
@@ -14,11 +14,11 @@ const InfoPage = ({ data }) => {
   } = data;
 
   return (
-    <Container>
+    <GlobalStyles>
       <NavBar />
       <h1>{title}</h1>
       <p>{description}</p>
-    </Container>
+    </GlobalStyles>
   );
 };
 
