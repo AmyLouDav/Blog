@@ -2,13 +2,16 @@ import React from "react";
 import { graphql } from "gatsby";
 import NavBar from "../nav-bar/navBar";
 import { Container } from "../styles/container.styled";
+import DOMPurify from "dompurify";
 
 const BlogPage = ({ data }) => {
   const {
     contentfulBlogPage: {
       content: {
         title,
-        description: { description },
+        description: {
+          childMarkdownRemark: { html },
+        },
         image: { url },
       },
     },
@@ -19,9 +22,13 @@ const BlogPage = ({ data }) => {
       <NavBar />
       <h1>{title}</h1>
       <div>
-        <img src={url} alt="placeholder" />
+        <img src={url} alt="placeholder" width="800px" />
       </div>
-      <p>{description}</p>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: DOMPurify.sanitize(html),
+        }}
+      />
     </Container>
   );
 };
@@ -35,9 +42,10 @@ export const query = graphql`
       id
       content {
         title
-        description {
-          description
-          id
+        description: childContentfulElementInfoDescriptionTextNode {
+          childMarkdownRemark {
+            html
+          }
         }
         slug
         image {
