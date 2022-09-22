@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import NavBar from "../components/nav-bar/navBar";
 import LinkCard from "../components/link-card/linkCard";
+import { Container } from "../components/styles/container.styled";
 
 const ListPage = ({ data }) => {
   const {
@@ -21,7 +22,7 @@ const ListPage = ({ data }) => {
   const { nodes } = data.allContentfulBlogPage;
 
   return (
-    <main>
+    <Container>
       <NavBar />
       <h1>Blog Posts</h1>
       <ul>
@@ -31,7 +32,7 @@ const ListPage = ({ data }) => {
           </li>
         ))}
       </ul>
-    </main>
+    </Container>
   );
 };
 

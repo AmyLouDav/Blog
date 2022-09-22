@@ -5,7 +5,7 @@ export const Container = styled.div`
   max-width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  font-family: Georgia, serif;
+  font-family: 'Open Sans', sans-serif;
   color: #fff;
   background-color: #002366;
 `;
