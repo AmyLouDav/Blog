@@ -1,10 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import NavBar from "../components/nav-bar/navBar";
-import BlogPage from "../components/blog-page/blogPage";
-import { Link } from "gatsby";
 import LinkCard from "../components/link-card/linkCard";
-//import { Container } from "../components/styles/container.styled";
 
 const ListPage = ({ data }) => {
   const {
