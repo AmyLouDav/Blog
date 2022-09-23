@@ -4,16 +4,16 @@ import { Link } from "gatsby";
 export const NavBarLink = styled.div`
   margin-right: 40px;
   margin-top: 10px;
-`;
+`
 
 export const NavBarContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-`;
+`
 
 export const StyledLink = styled(Link)`
-  color: black;
+  color: #f25731;
   text-decoration: none;
   font-weight: bold;
   list-style-type: none;
@@ -24,4 +24,4 @@ export const StyledLink = styled(Link)`
   &:active {
     color: violet;
   }
-`;
+`

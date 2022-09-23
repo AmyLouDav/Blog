@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const GlobalStyles = styled.div
-`  width: 100%;
+export const GlobalStyles = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap");
+  width: 100%;
   max-width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  //background-color: #002366;`
-;
+  color: #f25731;
+  font-family: "Signika";
+`;

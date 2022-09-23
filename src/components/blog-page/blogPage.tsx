@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import NavBar from "../nav-bar/navBar";
 import { GlobalStyles } from "../styles/global-styles";
+
 import DOMPurify from "dompurify";
 
 const BlogPage = ({ data }) => {
