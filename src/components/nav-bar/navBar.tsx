@@ -1,16 +1,20 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { StyledLink } from "./styles";
+import { StyledLink, NavBarContainer, NavBarLink } from "./styles";
 
 const NavBar = () => {
   return (
-    <div>
+    <NavBarContainer>
+      <NavBarLink>
       <StyledLink to="/home">Home</StyledLink>
-      <br />
+      </NavBarLink>
+      <NavBarLink>
       <StyledLink to="/contact">Contact</StyledLink>
-      <br />
+      </NavBarLink>
+      <NavBarLink>
       <StyledLink to="/list">Blog Posts</StyledLink>
-    </div>
+      </NavBarLink>
+    </NavBarContainer>
   );
 };
 export default NavBar;
