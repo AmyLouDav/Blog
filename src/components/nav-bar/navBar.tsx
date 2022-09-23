@@ -1,14 +1,15 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { StyledLink } from "./styles";
 
 const NavBar = () => {
   return (
     <div>
-      <Link to="/home">Home</Link>
+      <StyledLink to="/home">Home</StyledLink>
       <br />
-      <Link to="/contact">Contact</Link>
+      <StyledLink to="/contact">Contact</StyledLink>
       <br />
-      <Link to="/list">Blog Posts</Link>
+      <StyledLink to="/list">Blog Posts</StyledLink>
     </div>
   );
 };

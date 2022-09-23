@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import NavBar from "../components/nav-bar/navBar";
 import LinkCard from "../components/link-card/linkCard";
 import { GlobalStyles } from "../components/styles/global-styles";
+import { StyledLink } from "../components/nav-bar/styles";
 
 const ListPage = ({ data }) => {
   const {
@@ -27,9 +28,9 @@ const ListPage = ({ data }) => {
       <h1>Blog Posts</h1>
       <ul>
         {nodes.map((item) => (
-          <li>
+          <StyledLink>
             <LinkCard linkData={item.content} />
-          </li>
+          </StyledLink>
         ))}
       </ul>
     </GlobalStyles>
