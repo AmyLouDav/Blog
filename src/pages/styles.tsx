@@ -12,4 +12,9 @@ export const StyledH1 = styled.h1`
 
 export const Wrapper = styled.div`
   width: 100%;
-`;
+`
+
+export const LinkCardContainer = styled.div`
+  height: 300px;
+  width: 300px;
+`

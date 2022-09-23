@@ -2,8 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import NavBar from "../nav-bar/navBar";
 import { GlobalStyles } from "../styles/global-styles";
-
 import DOMPurify from "dompurify";
+import { Wrapper, StyledH1, StyledImg, StyledText } from "./styles";
 
 const BlogPage = ({ data }) => {
   const {
@@ -21,15 +21,19 @@ const BlogPage = ({ data }) => {
   return (
     <GlobalStyles>
       <NavBar />
-      <h1>{title}</h1>
+      <StyledH1>{title}</StyledH1>
+
       <div>
-        <img src={url} alt="placeholder" width="800px" />
+        <StyledImg src={url} alt="placeholder" width="700px" />
       </div>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: DOMPurify.sanitize(html),
-        }}
-      />
+
+      <StyledText>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: DOMPurify.sanitize(html),
+          }}
+        />
+      </StyledText>
     </GlobalStyles>
   );
 };

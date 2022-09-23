@@ -1,17 +1,23 @@
 import React from "react";
 import { Link } from "gatsby";
 import { GlobalStyles } from "../styles/global-styles";
-import { StyledLink } from "../nav-bar/styles";
+import { StyledLink, Wrapper, StyledImg, ImgContainer, TitleContainer  } from "./styles";
 
 const LinkCard = ({ linkData }) => {
   return (
     <GlobalStyles>
-    <StyledLink to={linkData.slug}>
-      {linkData.title}
-      <div>
-        <img src={linkData.image.url} alt="placeholder" width = "150px" />
-      </div>
-    </StyledLink>
+      <Wrapper>
+        <StyledLink to={linkData.slug}>
+          <ImgContainer>
+            <StyledImg
+              src={linkData.image.url}
+              alt="placeholder"
+              width="150px"
+            />
+          </ImgContainer>
+          <TitleContainer>{linkData.title}</TitleContainer>
+        </StyledLink>
+      </Wrapper>
     </GlobalStyles>
   );
 };

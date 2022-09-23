@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import NavBar from "../nav-bar/navBar";
 import { GlobalStyles } from "../styles/global-styles";
-import { StyledH1 } from "./styles";
+import { StyledH1, Wrapper } from "./styles";
 
 const InfoPage = ({ data }) => {
   const {
@@ -17,7 +17,10 @@ const InfoPage = ({ data }) => {
   return (
     <GlobalStyles>
       <NavBar />
-      <StyledH1>{title}</StyledH1>
+      <Wrapper>
+        <StyledH1>{title}</StyledH1>
+      </Wrapper>
+
       <p>{description}</p>
     </GlobalStyles>
   );

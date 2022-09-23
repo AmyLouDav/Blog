@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import NavBar from "../components/nav-bar/navBar";
 import LinkCard from "../components/link-card/linkCard";
 import { GlobalStyles } from "../components/styles/global-styles";
+import { StyledH1, Wrapper, LinkCardContainer } from "./styles";
 
 const ListPage = ({ data }) => {
   const {
@@ -24,14 +25,16 @@ const ListPage = ({ data }) => {
   return (
     <GlobalStyles>
       <NavBar />
-      <h1>Blog Posts</h1>
-      <ul>
+      <Wrapper>
+      <StyledH1>Blog Posts</StyledH1>
+      </Wrapper>
+      <div>
         {nodes.map((item) => (
-          <div>
+          <LinkCardContainer>
             <LinkCard linkData={item.content} />
-          </div>
+          </LinkCardContainer>
         ))}
-      </ul>
+      </div>
     </GlobalStyles>
   );
 };
