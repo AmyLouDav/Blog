@@ -7,9 +7,9 @@ export const StyledH1 = styled.h1`
   font-weight: lighter;
   display: flex;
   justify-content: center;
-  margin: 0;
-`;
+  margin-top: 30px;
+`
 
 export const Wrapper = styled.div`
-  width: 100%;
-`;
+    width: 100%;
+`
