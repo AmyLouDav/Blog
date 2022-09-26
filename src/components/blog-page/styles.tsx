@@ -22,3 +22,12 @@ export const StyledImg = styled.img`
 export const StyledText = styled.div`
   color: black;
 `
+
+export const TextContainer = styled.div`
+  margin: 0 auto;
+`
+
+export const ContentContainer = styled.div`
+  margin: 0 auto;
+  width: 1000px;
+`
