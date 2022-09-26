@@ -7,11 +7,11 @@ export const NavBarLink = styled.div`
 `;
 
 export const NavBarContainer = styled.div`
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: white;
   border-bottom: 1px solid #f25731;
-  padding: 20px;
+  padding: 10px;
   margin: 0;
   width: 100%;
   display: flex;

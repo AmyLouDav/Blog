@@ -24,7 +24,7 @@ const BlogPage = ({ data }) => {
       <StyledH1>{title}</StyledH1>
       <ContentContainer>
       <div>
-        <StyledImg src={url} alt="placeholder" width="700px" />
+        <StyledImg src={url} alt="placeholder" width="300px" />
       </div>
       <TextContainer>
         <StyledText>

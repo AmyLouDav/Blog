@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import NavBar from "../nav-bar/navBar";
 import { GlobalStyles } from "../styles/global-styles";
 import { StyledH1, Wrapper } from "./styles";
+import { Container } from "../../pages/styles";
 
 const InfoPage = ({ data }) => {
   const {
@@ -17,11 +18,13 @@ const InfoPage = ({ data }) => {
   return (
     <GlobalStyles>
       <NavBar />
-      <Wrapper>
-        <StyledH1>{title}</StyledH1>
-      </Wrapper>
+      <Container>
+        <Wrapper>
+          <StyledH1>{title}</StyledH1>
+        </Wrapper>
 
-      <p>{description}</p>
+        <p>{description}</p>
+      </Container>
     </GlobalStyles>
   );
 };
