@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { PrimaryColour } from "../styles/global-styles";
+import { PrimaryColour } from "../constants";
 
 export const Wrapper = styled.div``;
 export const StyledLink = styled(Link)`

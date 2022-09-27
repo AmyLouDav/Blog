@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import NavBar from "../components/nav-bar/navBar";
 import LinkCard from "../components/link-card/linkCard";
 import Layout from "../components/layout";
-import { StyledH1, Wrapper, LinkCardContainer, Container } from "./styles";
+import { StyledH1, LinkCardContainer, Container } from "./styles";
 
 const ListPage = ({ data }) => {
   const {

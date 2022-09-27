@@ -1,4 +1,5 @@
 import React from "react";
+import { SecondaryFont } from "./constants";
 
 export default function Layout({ children }) {
   return (
@@ -9,7 +10,7 @@ export default function Layout({ children }) {
         padding: `0`,
         margin: `0 auto`,
         color: `#f25731`,
-        fontFamily: `Signika`,
+        fontFamily: `${SecondaryFont}`,
       }}
     >
       {children}

@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { Tablet, Laptop } from "../styles/global-styles";
+import { Tablet, Laptop, PrimaryFont, PrimaryColour } from "../constants";
 
 export const StyledH1 = styled.h1`
   font-size: 40px;
-  font-family: "Abril Fatface";
+  font-family: ${PrimaryFont};
   font-weight: lighter;
   display: flex;
   justify-content: center;
@@ -32,10 +32,10 @@ export const InfoPageImg = styled.div`
 `;
 
 export const StyledText = styled.div`
-  color: #f25731;
+  color: ${PrimaryColour};
   margin-top: 30px;
   a {
-    color: #f25731;
+    color: ${PrimaryColour};
     text-decoration: none;
   }
 `;

@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { Tablet, Laptop } from "../styles/global-styles";
+import { Tablet, Laptop, PrimaryFont } from "../constants";
 
 export const StyledH1 = styled.h1`
   font-size: 20px;
-  font-family: "Abril Fatface";
+  font-family: ${PrimaryFont};
   font-weight: lighter;
   display: flex;
   justify-content: center;

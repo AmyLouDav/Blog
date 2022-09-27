@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { PrimaryColour } from "../constants";
 
 export const NavBarLink = styled.div`
   margin-right: 40px;
@@ -10,7 +11,7 @@ export const NavBarContainer = styled.div`
   position: fixed;
   top: 0;
   background-color: white;
-  border-bottom: 1px solid #f25731;
+  border-bottom: 1px solid ${PrimaryColour};
   padding: 10px;
   margin: 0;
   width: 100%;
@@ -19,7 +20,7 @@ export const NavBarContainer = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-  color: #f25731;
+  color: ${PrimaryColour};
   text-decoration: none;
   font-size: 11px;
   font-weight: bold;
