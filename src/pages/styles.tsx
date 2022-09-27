@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { device } from "../components/styles/global-styles";
+import { Tablet, Laptop } from "../components/styles/global-styles";
 
 export const StyledH1 = styled.h1`
-  @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
   font-size: 40px;
   font-family: "Abril Fatface";
   font-weight: lighter;
@@ -10,11 +9,11 @@ export const StyledH1 = styled.h1`
   justify-content: center;
   margin: 40px 0 0;
 
-  @media (${device.tablet}) {
+  @media ${Tablet} {
     font-size: 50px;
   }
 
-  @media (${device.laptop}) {
+  @media ${Laptop} {
     font-size: 60px;
   }
 `;
@@ -24,13 +23,13 @@ export const Wrapper = styled.div`
 `;
 
 export const LinkCardContainer = styled.div`
-  @media (${device.tablet}) {
+  @media ${Tablet} {
     display: inline-block;
     height: 300px;
     width: 300px;
   }
 
-  @media (${device.laptop}) {
+  @media ${Laptop} {
     display: inline-block;
     height: 300px;
     width: 300px;

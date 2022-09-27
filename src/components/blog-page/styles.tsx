@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { device } from "../styles/global-styles";
+import { Tablet, Laptop } from "../styles/global-styles";
 
 export const StyledH1 = styled.h1`
-  @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
   font-size: 20px;
   font-family: "Abril Fatface";
   font-weight: lighter;
@@ -11,11 +10,11 @@ export const StyledH1 = styled.h1`
   margin-top: 80px;
   margin-bottom: 30px;
 
-  @media (${device.tablet}) {
+  @media (${Tablet}) {
     font-size: 30px;
   }
 
-  @media (${device.laptop}) {
+  @media (${Laptop}) {
     font-size: 50px;
   }
 `;

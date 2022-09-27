@@ -4,7 +4,6 @@ import Layout from "../layout";
 import NavBar from "../nav-bar/navBar";
 import DOMPurify from "dompurify";
 import {
-  Wrapper,
   ContentContainer,
   StyledH1,
   StyledImg,

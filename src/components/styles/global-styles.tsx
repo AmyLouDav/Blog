@@ -1,11 +1,5 @@
-import styled from "styled-components";
+export const PrimaryColour = `#f25731`;
 
-const size = {
-  tablet: "768px",
-  laptop: "1024px",
-};
+export const Tablet = `768px`;
 
-export const device = {
-  tablet: `min-width: ${size.tablet}`,
-  laptop: `min-width: ${size.laptop}`,
-};
+export const Laptop = `1024px`

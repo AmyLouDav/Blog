@@ -1,22 +1,18 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { PrimaryColour } from "../styles/global-styles";
 
-export const Wrapper = styled.div`
-  
-`;
+export const Wrapper = styled.div``;
 export const StyledLink = styled(Link)`
-  color: #f25731;
+  color: ${PrimaryColour};
   text-decoration: none;
   font-weight: bold;
+  margin-top: 50px;
   list-style-type: none;
   &:hover,
   &:focus {
     color: pink;
   }
-  &:active {
-    color: violet;
-  }
-  margin-top: 50px;
 `;
 
 export const ImgContainer = styled.div`
@@ -28,12 +24,11 @@ export const ImgContainer = styled.div`
 export const TitleContainer = styled.div`
   display: flex;
   justify-content: center;
-`
+`;
 
 export const StyledImg = styled.img`
   width: 200px;
   height: 300px;
   object-fit: cover;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 `;
