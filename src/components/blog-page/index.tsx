@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../layout";
-import NavBar from "../nav-bar/navBar";
+import NavBar from "../nav-bar";
 import DOMPurify from "dompurify";
 import {
   ContentContainer,

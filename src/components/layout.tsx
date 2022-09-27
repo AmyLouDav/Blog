@@ -1,5 +1,5 @@
 import React from "react";
-import { SecondaryFont } from "./constants";
+import { PrimaryColour, SecondaryFont } from "./constants";
 
 export default function Layout({ children }) {
   return (
@@ -9,7 +9,7 @@ export default function Layout({ children }) {
         maxWidth: `100%`,
         padding: `0`,
         margin: `0 auto`,
-        color: `#f25731`,
+        color: `${PrimaryColour}`,
         fontFamily: `${SecondaryFont}`,
       }}
     >
