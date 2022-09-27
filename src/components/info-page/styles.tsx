@@ -29,6 +29,9 @@ export const InfoPageImg = styled.div`
 
 export const StyledText = styled.div`
   color: #f25731;
-  text-decoration: none;
   margin-top: 30px;
+  a {
+    color: #f25731;
+    text-decoration: none;
+  }
 `;

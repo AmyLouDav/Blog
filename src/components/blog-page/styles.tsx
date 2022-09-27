@@ -9,6 +9,7 @@ export const StyledH1 = styled.h1`
   display: flex;
   justify-content: center;
   margin-top: 80px;
+  margin-bottom: 30px;
 
   @media (${device.tablet}) {
     font-size: 30px;
