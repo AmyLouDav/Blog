@@ -11,7 +11,7 @@ import {
   ContentContainer,
   TextContainer,
 } from "../blog-page/styles";
-import { InfoPageImg, StyledText } from "./styles";
+import { InfoPageImg, StyledText, } from "./styles";
 
 const InfoPage = ({ data }) => {
   const {

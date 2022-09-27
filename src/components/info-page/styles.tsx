@@ -23,6 +23,11 @@ export const Wrapper = styled.div`
   width: 100%;
 `;
 
+export const StyledImg = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export const InfoPageImg = styled.div`
   margin-top: 30px;
 `;
@@ -35,3 +40,5 @@ export const StyledText = styled.div`
     text-decoration: none;
   }
 `;
+
+
