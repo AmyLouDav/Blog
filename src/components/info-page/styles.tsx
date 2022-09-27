@@ -17,8 +17,18 @@ export const StyledH1 = styled.h1`
   @media (${device.laptop}) {
     font-size: 60px;
   }
-`
+`;
 
 export const Wrapper = styled.div`
-    width: 100%;
-`
+  width: 100%;
+`;
+
+export const InfoPageImg = styled.div`
+  margin-top: 30px;
+`;
+
+export const StyledText = styled.div`
+  color: #f25731;
+  text-decoration: none;
+  margin-top: 30px;
+`;

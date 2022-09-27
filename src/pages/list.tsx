@@ -26,9 +26,6 @@ const ListPage = ({ data }) => {
   return (
     <GlobalStyles>
       <NavBar />
-      {/* <Wrapper>
-        <StyledH1>Blog Posts</StyledH1>
-      </Wrapper> */}
       <Container>
         <StyledH1>Blog Posts</StyledH1>
         {nodes.map((item) => (

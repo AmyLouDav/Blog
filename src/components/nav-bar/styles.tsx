@@ -21,6 +21,7 @@ export const NavBarContainer = styled.div`
 export const StyledLink = styled(Link)`
   color: #f25731;
   text-decoration: none;
+  font-size: 11px;
   font-weight: bold;
   list-style-type: none;
   &:hover,
