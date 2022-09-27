@@ -3,7 +3,7 @@ import "normalize.css";
 import { graphql } from "gatsby";
 import NavBar from "../components/nav-bar/navBar";
 import LinkCard from "../components/link-card/linkCard";
-import { GlobalStyles } from "../components/styles/global-styles";
+import Layout from "../components/layout";
 import { StyledH1, Wrapper, LinkCardContainer, Container } from "./styles";
 
 const ListPage = ({ data }) => {
@@ -24,7 +24,7 @@ const ListPage = ({ data }) => {
   const { nodes } = data.allContentfulBlogPage;
 
   return (
-    <GlobalStyles>
+    <Layout>
       <NavBar />
       <Container>
         <StyledH1>Blog Posts</StyledH1>
@@ -34,7 +34,7 @@ const ListPage = ({ data }) => {
           </LinkCardContainer>
         ))}
       </Container>
-    </GlobalStyles>
+    </Layout>
   );
 };
 

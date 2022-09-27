@@ -1,11 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
-import { GlobalStyles } from "../styles/global-styles";
-import { StyledLink, Wrapper, StyledImg, ImgContainer, TitleContainer  } from "./styles";
+import Layout from "../layout";
+import {
+  StyledLink,
+  Wrapper,
+  StyledImg,
+  ImgContainer,
+  TitleContainer,
+} from "./styles";
 
 const LinkCard = ({ linkData }) => {
   return (
-    <GlobalStyles>
+    <Layout>
       <Wrapper>
         <StyledLink to={linkData.slug}>
           <ImgContainer>
@@ -18,7 +24,7 @@ const LinkCard = ({ linkData }) => {
           <TitleContainer>{linkData.title}</TitleContainer>
         </StyledLink>
       </Wrapper>
-    </GlobalStyles>
+    </Layout>
   );
 };
 

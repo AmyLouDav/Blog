@@ -1,8 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import "normalize.css";
+import Layout from "../layout";
 import NavBar from "../nav-bar/navBar";
-import { GlobalStyles } from "../styles/global-styles";
 import { StyledH1 } from "../../pages/styles";
 import { Container } from "../../pages/styles";
 import DOMPurify from "dompurify";
@@ -27,7 +26,7 @@ const InfoPage = ({ data }) => {
   } = data;
 
   return (
-    <GlobalStyles>
+    <Layout>
       <NavBar />
       <Container>
         <StyledH1>{title}</StyledH1>
@@ -46,7 +45,7 @@ const InfoPage = ({ data }) => {
           </TextContainer>
         </ContentContainer>
       </Container>
-    </GlobalStyles>
+    </Layout>
   );
 };
 
