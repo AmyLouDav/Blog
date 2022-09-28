@@ -7,3 +7,5 @@ export const PrimaryColour = `#f25731`;
 export const PrimaryFont = `Abril Fatface`;
 
 export const SecondaryFont = `Signika`;
+
+//convention to have the name of these variables in capitals?
