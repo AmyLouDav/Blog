@@ -8,4 +8,6 @@ export const PrimaryFont = `Abril Fatface`;
 
 export const SecondaryFont = `Signika`;
 
-//convention to have the name of these variables in capitals?
+
+//objects called media and fonts etc and export the obj
+//not each var is an export
