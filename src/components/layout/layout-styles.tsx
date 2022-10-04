@@ -1,4 +1,4 @@
-import { PrimaryColour, SecondaryFont } from "./constants";
+import { PrimaryColour, SecondaryFont } from "../constants";
 import styled from "styled-components";
 
 export const App = styled.div`
