@@ -3,7 +3,7 @@ import "normalize.css";
 import { graphql } from "gatsby";
 import NavBar from "../components/nav-bar/index";
 import LinkCard from "../components/link-card/index";
-import Layout from "../components/layout";
+import Layout from "../components/layout/layout";
 import { StyledH1, LinkCardContainer, Container } from "./styles";
 
 const ListPage = ({ data }) => {

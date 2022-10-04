@@ -1,6 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import Layout from "../layout";
+import Layout from "../layout/layout";
 import NavBar from "../nav-bar/index";
 import { StyledH1 } from "../../pages/styles";
 import { Container } from "../../pages/styles";
