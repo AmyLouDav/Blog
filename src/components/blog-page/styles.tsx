@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Tablet, Laptop, PrimaryFont } from "../constants";
+import { Tablet, Laptop, PrimaryFont, SecondaryFont } from "../constants";
 
 export const StyledH1 = styled.h1`
   font-size: 20px;
@@ -31,6 +31,7 @@ export const StyledImg = styled.img`
 export const StyledText = styled.div`
   color: black;
   font-size: 12px;
+  font-family: ${SecondaryFont};
 `;
 
 export const TextContainer = styled.div`

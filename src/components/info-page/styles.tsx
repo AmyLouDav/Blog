@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Tablet, Laptop, PrimaryFont, PrimaryColour } from "../constants";
+import { Tablet, Laptop, PrimaryFont, PrimaryColour, SecondaryFont } from "../constants";
 
 export const StyledH1 = styled.h1`
   font-size: 40px;
@@ -33,6 +33,7 @@ export const InfoPageImg = styled.div`
 
 export const StyledText = styled.div`
   color: ${PrimaryColour};
+  font-family: ${SecondaryFont};
   margin-top: 30px;
   a {
     color: ${PrimaryColour};

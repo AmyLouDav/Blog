@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { PrimaryColour } from "../constants";
+import { PrimaryColour, SecondaryFont } from "../constants";
 
 export const NavBarLink = styled.div`
   margin-right: 40px;
@@ -22,7 +22,7 @@ export const NavBarContainer = styled.div`
 export const StyledLink = styled(Link)`
   color: ${PrimaryColour};
   text-decoration: none;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: bold;
   list-style-type: none;
   &:hover,
