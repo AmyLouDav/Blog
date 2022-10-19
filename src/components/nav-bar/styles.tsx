@@ -13,6 +13,7 @@ export const NavBarContainer = styled.div`
   background-color: white;
   border-bottom: 1px solid ${PrimaryColour};
   padding: 10px;
+  padding-left: 35px;
   margin: 0;
   width: 100%;
   display: flex;

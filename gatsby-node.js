@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   const blogPages = result.data.allContentfulBlogPage.nodes;
-  
+
   blogPages.forEach((blogPage) => {
     const { slug } = blogPage;
     createPage({
